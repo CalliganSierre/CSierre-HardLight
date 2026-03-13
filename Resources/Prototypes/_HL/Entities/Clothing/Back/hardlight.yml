@@ -5,10 +5,10 @@
   description: A rugged backpack worn by the squad leader of a naval infantry squad, made with a radio pocket on the side.
   components:
   - type: Sprite
-    sprite: _HL\Clothing\Back\ColNavInf\cnisquadleader.rsi
+    sprite: _HL/Clothing/Back/ColNavInf/cnisquadleader.rsi
     state: icon
   - type: Clothing
-    sprite: _HL\Clothing\Back\ColNavInf\cnisquadleader.rsi
+    sprite: _HL/Clothing/Back/ColNavInf/cnisquadleader.rsi
     clothingVisuals:
       back:
       - state: equipped-BACKPACK-shaded
@@ -28,7 +28,7 @@
   description: A rugged backpack worn by non-specialist riflemen in naval infantry fireteams.
   components:
   - type: Sprite
-    sprite: _HL\Clothing\Back\ColNavInf\cnirifleman.rsi
+    sprite: _HL/Clothing/Back/ColNavInf/cnirifleman.rsi
   - type: Storage
     grid:
     - 3,0,8,7
@@ -44,7 +44,7 @@
   description: A rugged backpack worn by combat engineers in naval infantry squads.
   components:
   - type: Sprite
-    sprite: _HL\Clothing\Back\ColNavInf\cnicombatengineer.rsi
+    sprite: _HL/Clothing/Back/ColNavInf/cnicombatengineer.rsi
   - type: Storage
     grid:
     - 3,0,8,7
@@ -59,7 +59,7 @@
   description: A rugged backpack worn by explosive weapons specialists in naval infantry platoons, with an additional specialized compartment for carrying a missile launcher.
   components:
   - type: Sprite
-    sprite: _HL\Clothing\Back\ColNavInf\cniexplosivespecialist.rsi
+    sprite: _HL/Clothing/Back/ColNavInf/cniexplosivespecialist.rsi
   - type: Storage
     grid:
     - 3,0,8,7
@@ -73,7 +73,7 @@
   description: A rugged backpack worn by corpsmen in naval infantry platoons.
   components:
   - type: Sprite
-    sprite: _HL\Clothing\Back\ColNavInf\cnicorpsman.rsi
+    sprite: _HL/Clothing/Back/ColNavInf/cnicorpsman.rsi
 
 - type: entity
   parent: ClothingBackpackCNIRifleman
@@ -82,7 +82,7 @@
   description: A rugged backpack worn by suppression gunners in naval infantry squads.
   components:
   - type: Sprite
-    sprite: _HL\Clothing\Back\ColNavInf\cnimachinegunner.rsi
+    sprite: _HL/Clothing/Back/ColNavInf/cnimachinegunner.rsi
 
 - type: entity
   parent: [ ClothingMaskGas, BaseColcommContraband ]
@@ -91,9 +91,9 @@
   description: A military-grade gas mask used by the Colonial Navy.
   components:
   - type: Sprite
-    sprite: Clothing/Mask/cni.rsi
+    sprite: _HL/Clothing/Mask/cni.rsi
   - type: Clothing
-    sprite: Clothing/Mask/cni.rsi
+    sprite: _HL/Clothing/Mask/cni.rsi
   - type: Tag
     tags:
     - WhitelistChameleon
