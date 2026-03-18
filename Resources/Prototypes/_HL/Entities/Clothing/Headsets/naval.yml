@@ -1,0 +1,183 @@
+- type: entity
+  parent: ClothingHeadsetNavalRifleman
+  id: ClothingHeadsetNavalOfficer
+  name: CNI Officer headset
+  description: A headset used by officers of the Colonial Navy.
+  components:
+  - type: ActiveRadio
+    intrinsicChannels:
+    - Naval
+    - ColCom
+    - Command
+    - ColSec
+    - Security
+    - Medical
+    - Engineering
+    - Science
+    - Supply
+    - Service
+    - Common
+  - type: EncryptionKeyHolder
+    intrinsicChannels:
+    - Naval
+    - ColCom
+    - Command
+    - ColSec
+    - Security
+    - Medical
+    - Engineering
+    - Science
+    - Supply
+    - Service
+    - Common
+  - type: Sprite
+    sprite: _HL/Clothing/Ears/Headsets/Naval/navalofficer.rsi
+  - type: Clothing
+    sprite: _HL/Clothing/Ears/Headsets/Naval/navalofficer.rsi
+
+- type: entity
+  parent: ClothingHeadsetNavalRifleman
+  id: ClothingHeadsetNavalSQL
+  name: CNI SqL over-ear headset
+  description: A headset used by squad and platoon leaders in the Colonial Naval Infantry.
+  components:
+  - type: ActiveRadio
+    intrinsicChannels:
+    - Naval
+    - ColSec
+    - Security
+    - Common
+  - type: EncryptionKeyHolder
+    intrinsicChannels:
+    - Naval
+    - ColSec
+    - Security
+    - Common
+  - type: Sprite
+    sprite: _HL/Clothing/Ears/Headsets/Naval/cnisquadleader.rsi
+  - type: Clothing
+    sprite: _HL/Clothing/Ears/Headsets/Naval/cnisquadleader.rsi
+
+- type: entity
+  parent: ClothingHeadsetNavalRifleman
+  id: ClothingHeadsetNavalCorpsman
+  name: CNI corpsman over-ear headset
+  description: A headset used by corpsmen in the Colonial Navy.
+  components:
+  - type: ActiveRadio
+    intrinsicChannels:
+    - Medical
+    - Common
+  - type: EncryptionKeyHolder
+    intrinsicChannels:
+    - Medical
+    - Common
+  - type: Sprite
+    sprite: _HL/Clothing/Ears/Headsets/Naval/cnimedic.rsi
+  - type: Clothing
+    sprite: _HL/Clothing/Ears/Headsets/Naval/cnimedic.rsi
+
+- type: entity
+  parent: ClothingHeadsetNavalRifleman
+  id: ClothingHeadsetNavalEngineer
+  name: CNI engineer over-ear headset
+  description: A headset used by engineers in the Colonial Navy.
+  components:
+  - type: ActiveRadio
+    intrinsicChannels:
+    - Engineering
+    - Common
+  - type: EncryptionKeyHolder
+    intrinsicChannels:
+    - Engineering
+    - Common
+  - type: Sprite
+    sprite: _HL/Clothing/Ears/Headsets/Naval/cniengineer.rsi
+  - type: Clothing
+    sprite: _HL/Clothing/Ears/Headsets/Naval/cniengineer.rsi
+
+- type: entity
+  parent: [ClothingHeadset, BaseCentcommContraband]
+  id: ClothingHeadsetNaval
+  name: naval headset
+  description: A headset used by enlisted navymen in the Colonial Navy.
+  components:
+  - type: ActiveRadio
+    intrinsicChannels:
+    - Naval
+    - Common
+  - type: EncryptionKeyHolder
+    intrinsicChannels:
+    - Naval
+    - Common
+  - type: Sprite
+    sprite: _HL/Clothing/Ears/Headsets/Naval/naval.rsi
+  - type: Clothing
+    sprite: _HL/Clothing/Ears/Headsets/Naval/naval.rsi
+
+- type: entity
+  parent: [ClothingHeadset, BaseCentcommContraband]
+  id: ClothingHeadsetNavalRifleman
+  name: CNI rifleman over-ear headset
+  description: A headset used by enlisted riflemen in the Colonial Naval Infantry.
+  components:
+  - type: ActiveRadio
+    intrinsicChannels:
+    - Common
+  - type: EncryptionKeyHolder
+    intrinsicChannels:
+    - Common
+  - type: Sprite
+    sprite: _HL/Clothing/Ears/Headsets/Naval/cnirifleman.rsi
+  - type: Clothing
+    sprite: _HL/Clothing/Ears/Headsets/Naval/cnirifleman.rsi
+
+# ALT headsets.
+
+- type: entity
+  parent: ClothingHeadsetNavalOfficer
+  id: ClothingHeadsetNavalOfficerAlt
+  name: CNI officer over-ear headset
+  components:
+  - type: Sprite
+    sprite: _HL/Clothing/Ears/Headsets/Naval/navalofficer.rsi
+    state: icon_alt
+  - type: Clothing
+    sprite: _HL/Clothing/Ears/Headsets/Naval/navalofficer.rsi
+    equippedState: alt-equipped-EARS
+
+- type: entity
+  parent: ClothingHeadsetNavalRifleman
+  id: ClothingHeadsetNavalRiflemanAlt
+  name: CNI rifleman headset
+  components:
+  - type: Sprite
+    sprite: _HL/Clothing/Ears/Headsets/Naval/cnirifleman.rsi
+    state: icon_alt
+  - type: Clothing
+    sprite: _HL/Clothing/Ears/Headsets/Naval/cnirifleman.rsi
+    equippedState: alt-equipped-EARS
+
+- type: entity
+  parent: ClothingHeadsetNavalCorpsman
+  id: ClothingHeadsetNavalCorpsmanAlt
+  name: CNI corpsman headset
+  components:
+  - type: Sprite
+    sprite: _HL/Clothing/Ears/Headsets/Naval/cnimedic.rsi
+    state: icon_alt
+  - type: Clothing
+    sprite: _HL/Clothing/Ears/Headsets/Naval/cnimedic.rsi
+    equippedState: alt-equipped-EARS
+
+- type: entity
+  parent: ClothingHeadsetNavalEngineer
+  id: ClothingHeadsetNavalEngineerAlt
+  name: CNI engineer headset
+  components:
+  - type: Sprite
+    sprite: _HL/Clothing/Ears/Headsets/Naval/cniengineer.rsi
+    state: icon_alt
+  - type: Clothing
+    sprite: _HL/Clothing/Ears/Headsets/Naval/cniengineer.rsi
+    equippedState: alt-equipped-EARS

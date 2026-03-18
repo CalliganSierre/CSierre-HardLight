@@ -110,6 +110,24 @@
       "name": "dexpen_empty"
     },
     {
+      "name": "ichpen"
+    },
+    {
+      "name": "ichpen_empty"
+    },
+        {
+      "name": "hemapen"
+    },
+    {
+      "name": "hemapen_empty"
+    },
+        {
+      "name": "stelpen"
+    },
+    {
+      "name": "stelpen_empty"
+    },
+    {
       "name": "base-needle-inhand-left",
         "directions": 4
     },

@@ -1,0 +1,195 @@
+- type: entity
+  name: naval combat aid kit
+  description: It's a squad-level medical carry kit, with enough equipment to treat multiple infantrymen.
+  parent: Medkit
+  id: MedkitNaval
+  components:
+   - type: Sprite
+     state: navalkit
+   - type: Storage
+     maxItemSize: Small
+     grid:
+     - 0,0,5,3
+   - type: Item
+     size: Normal
+     heldPrefix: navalkit
+
+- type: entity
+  name: naval combat aid kit
+  id: MedkitNavalFilled
+  suffix: Filled
+  parent: MedkitNaval
+  components:
+  - type: StorageFill
+    contents:
+      - id: MedicatedSuture
+      - id: RegenerativeMesh
+      - id: MedicatedSuture
+      - id: RegenerativeMesh
+      - id: Bloodpack
+      - id: Bloodpack
+      - id: VialCombatAntiradiation
+      - id: VialCombatAntipoison
+      - id: SyringeEthylredoxrazine
+      - id: PillCanisterCharcoal
+      - id: StellibininMedipen
+      - id: StellibininMedipen
+      - id: HemamaxizineMedipen
+      - id: HemamaxizineMedipen
+
+- type: entity
+  id: VialCombatAntipoison
+  parent: VialBluespace
+  name: Bluespace Stellibinin Vial
+  components:
+  - type: Label
+    currentLabel:
+  - type: SolutionContainerManager
+    solutions:
+      beaker:
+        maxVol: 100
+        reagents:
+          - ReagentId: Stellibinin
+            Quantity: 100
+
+- type: entity
+  name: advanced poison auto-injector
+  parent: ChemicalMedipen
+  id: StellibininMedipen
+  description: A rapid dose of Stellibinin to rid the body of poison. It just works. This one can be refilled.
+  components:
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: base-needle-inhand-left
+      - state: base-colorA-inhand-left
+        color: "#414265"
+      - state: base-colorB-inhand-left
+      right:
+      - state: base-needle-inhand-right
+      - state: base-colorA-inhand-right
+        color: "#414265"
+      - state: base-colorB-inhand-right
+  - type: Sprite
+    sprite: Objects/Specific/Medical/medipen.rsi
+    layers:
+    - state: stelpen
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: stelpen_empty
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 10
+        reagents:
+        - ReagentId: Stellibinin
+          Quantity: 10
+  - type: ExaminableSolution
+    solution: pen
+  - type: RefillableSolution
+    solution: pen
+  - type: Tag
+    tags: []
+
+- type: entity
+  id: VialCombatAntiradiation
+  parent: VialBluespace
+  name: Bluespace Hemamaxizine Vial
+  components:
+  - type: Label
+    currentLabel:
+  - type: SolutionContainerManager
+    solutions:
+      beaker:
+        maxVol: 100
+        reagents:
+          - ReagentId: Hemamaxizine
+            Quantity: 100
+
+- type: entity
+  name: advanced radiation auto-injector
+  parent: ChemicalMedipen
+  id: HemamaxizineMedipen
+  description: A rapid dose of Hemamaxizine to rid the body of radiation. It just works. This one can be refilled.
+  components:
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: base-needle-inhand-left
+      - state: base-colorA-inhand-left
+        color: "#93c555"
+      - state: base-colorB-inhand-left
+      right:
+      - state: base-needle-inhand-right
+      - state: base-colorA-inhand-right
+        color: "#93c555"
+      - state: base-colorB-inhand-right
+  - type: Sprite
+    sprite: Objects/Specific/Medical/medipen.rsi
+    layers:
+    - state: hemapen
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: hemapen_empty
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 10
+        reagents:
+        - ReagentId: Hemamaxizine
+          Quantity: 10
+  - type: ExaminableSolution
+    solution: pen
+  - type: RefillableSolution
+    solution: pen
+  - type: Tag
+    tags: []
+
+- type: entity
+  name: first aid medipen
+  parent: ChemicalMedipen
+  id: FirstAidMedipen
+  description: An improved emergency medipen, containing a mixture of chemicals that can stabilize a patient in a pinch whether alive or critical.
+  components:
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: base-needle-inhand-left
+      - state: base-colorA-inhand-left
+        color: "#FFFFFF"
+      - state: base-colorB-inhand-left
+      right:
+      - state: base-needle-inhand-right
+      - state: base-colorA-inhand-right
+        color: "#FFFFFF"
+      - state: base-colorB-inhand-right
+  - type: Sprite
+    sprite: Objects/Specific/Medical/medipen.rsi
+    layers:
+    - state: firstaid
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: firstaid_empty
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 30
+        reagents:
+        - ReagentId: Bicaridine
+          Quantity: 10
+        - ReagentId: Dermaline
+          Quantity: 10
+        - ReagentId: Epinephrine
+          Quantity: 5
+        - ReagentId: Saline
+          Quantity: 5
+  - type: ExaminableSolution
+    solution: pen
+  - type: Tag
+    tags: []

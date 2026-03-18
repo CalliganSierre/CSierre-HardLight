@@ -1,0 +1,45 @@
+- type: entityTable
+  id: HLLockerFillCNIRifleman
+  table: !type:AllSelector
+    children:
+    - id: ClothingOuterHardsuitColonialNavalInfantry
+    - id: ClothingBackpackCNIRifleman
+    - id: SomeWeaponId
+
+# GUIDE
+- type: entity
+  id: HLLockerBrigmedicFilled
+  suffix: Brigmedic, Filled, Hardsuit
+  parent: HLLockerBrigmedic
+  categories: []
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - !type:NestedSelector
+          tableId: FillLockerBrigmedic
+        - !type:NestedSelector
+          tableId: HLFillHardsuitBrigmedic
+
+- type: entity
+  id: HLLockerBrigmedicFilledNoHardsuit
+  suffix: Brigmedic, Filled
+  parent: HLLockerBrigmedic
+  categories: []
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:NestedSelector
+        tableId: FillLockerBrigmedic
+
+- type: entityTable
+  id: HLFillHardsuitBrigmedic
+  table: !type:AllSelector
+    children:
+    - id: ClothingOuterHardsuitBrigmedic
+    - id: NFTankO2N2EqualFilled
+    - id: ClothingMaskBreath
+    - id: JetpackSecurityFilled
+    - id: ClothingShoesBootsMagSecurityFilled
+# GUIDE END

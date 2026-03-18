@@ -144,3 +144,33 @@
     - type: Sprite
       layers:
       - state: meatbrick
+
+- type: entity
+  name: Naval M.R.E.
+  parent: BoxMilitaryMRE
+  id: BoxNavalMRE
+  description: A box of genuine naval rations used by the Colonial Navy. Way better than the generic M.R.E. boxes...
+  components:
+  - type: Sprite
+    sprite: _HL/Objects/Consumable/Food/navalmre.rsi
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: DrinkMREFlask
+      - id: DrinkMREFlask
+      - id: FoodSnackNutribrick
+      - id: FoodSnackNutribrick
+      - id: FoodSnackEnergy
+      - id: FoodPSB
+      - id: FoodSnackMREBrownie
+      - id: FoodSnackRaisins
+      - id: FoodSnackEnergy
+      - id: FoodPSB
+      - id: FoodSnackChocolate
+  - type: Sprite
+    layers:
+      - state: box
+      - state: writing
+  - type: NFIngredient

@@ -154,6 +154,23 @@
             Brute: 1.5
 
 - type: reagent
+  id: Hemamaxizine
+  name: Hemamaxizine
+  group: Medicine
+  desc: A stabilized version of Arithrazine, difficult to synthesize but exceedingly effective at treating radiation poisoning, with mild genetic recovery benefits.
+  physicalDesc: reagent-physical-desc-viscous
+  flavor: medicine
+  color: "#93c555"
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Radiation: -5
+            Genetic: -1
+
+- type: reagent
   id: Bicaridine
   name: reagent-name-bicaridine
   group: Medicine

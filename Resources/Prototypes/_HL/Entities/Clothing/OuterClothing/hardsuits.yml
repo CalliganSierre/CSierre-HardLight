@@ -258,6 +258,8 @@
         Heat: 0.85
         Radiation: 0.95
         Caustic: 0.9
+  - type: FlashImmunity
+  - type: EyeProtection
 
 # Arcadia Hardsuit Helmet
 - type: entity

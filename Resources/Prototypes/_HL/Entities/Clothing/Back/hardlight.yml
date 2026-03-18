@@ -38,6 +38,37 @@
     damageCoefficient: 0.1
 
 - type: entity
+  id: ClothingBackpackCNIRiflemanFilled
+  parent: ClothingBackpackCNIRifleman
+  suffix: Filled
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: BackpackCNIRiflemanEntityTable
+
+- type: entityTable
+  id: BackpackCNIRiflemanEntityTable
+  table: !type:AllSelector
+    children:
+    - id: BoxNavalMRE
+    - id: DoubleEmergencyOxygenTankFilled
+    - id: DoubleEmergencyNitrogenTankFilled
+    - id: CrowbarRed
+    - id: WelderMini
+    - id: SpaceMedipen
+    - id: SpaceMedipen
+    - id: Tourniquet
+    - id: Tourniquet
+    - id: FirstAidMedipen
+    - id: FirstAidMedipen
+    - id: RadioHandheldNF
+    - id: ClothingMaskGasCNI
+    - id: Zipties
+    - id: Zipties
+    - id: FlashlightNfsdLite
+
+- type: entity
   parent: ClothingBackpackCNIRifleman
   id: ClothingBackpackCNICombatengineer
   name: CNI Combat Engineer backpack
@@ -51,6 +82,53 @@
     - 0,4,1,7
     - 10,4,11,7
     - 1,9,10,11
+
+- type: entity
+  id: ClothingBackpackCNICombatengineerFilled
+  parent: ClothingBackpackCNICombatengineer
+  suffix: Filled
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: BackpackCNICombatengineerEntityTable
+
+- type: entityTable
+  id: BackpackCNICombatengineerEntityTable
+  table: !type:AllSelector
+    children:
+    - id: BoxNavalMRE
+    - id: DoubleEmergencyOxygenTankFilled
+    - id: DoubleEmergencyNitrogenTankFilled
+    - id: CrowbarRed
+    - id: WelderMini
+    - id: SpaceMedipen
+    - id: SpaceMedipen
+    - id: Tourniquet
+    - id: Tourniquet
+    - id: FirstAidMedipen
+    - id: FirstAidMedipen
+    - id: RadioHandheldNF
+    - id: ClothingMaskGasCNI
+    - id: Zipties
+    - id: Zipties
+    - id: FlashlightNfsdLite
+    - id: RCDRecharging
+    - id: PowerDrill
+    - id: WelderExperimental
+    - id: Multitool
+    - id: GasAnalyzer
+    - id: trayScanner
+    - id: AccessConfigurator
+    - id: SheetSteel
+    - id: JawsOfLife
+    - id: Wirecutter
+    - id: HolofanProjector
+    - id: SheetGlass
+    - id: SheetPlastic
+    - id: SheetPlasteel
+    - id: SheetUranium
+    - id: SheetPlasma
 
 - type: entity
   parent: ClothingBackpackCNIRifleman
@@ -67,6 +145,38 @@
     - 10,1,13,6
 
 - type: entity
+  id: ClothingBackpackCNIExplosivespecialistFilled
+  parent: ClothingBackpackCNIExplosivespecialist
+  suffix: Filled
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: BackpackCNIExplosivespecialistEntityTable
+
+- type: entityTable
+  id: BackpackCNIExplosivespecialistEntityTable
+  table: !type:AllSelector
+    children:
+    - id: BoxNavalMRE
+    - id: DoubleEmergencyOxygenTankFilled
+    - id: DoubleEmergencyNitrogenTankFilled
+    - id: CrowbarRed
+    - id: WeaponLauncherMPSSMASM
+    - id: WelderMini
+    - id: SpaceMedipen
+    - id: SpaceMedipen
+    - id: Zipties
+    - id: Zipties
+    - id: Tourniquet
+    - id: Tourniquet
+    - id: FirstAidMedipen
+    - id: FirstAidMedipen
+    - id: RadioHandheldNF
+    - id: ClothingMaskGasCNI
+    - id: FlashlightNfsdLite
+
+- type: entity
   parent: ClothingBackpackCNIRifleman
   id: ClothingBackpackCNICorpsman
   name: CNI Corpsman backpack
@@ -74,6 +184,37 @@
   components:
   - type: Sprite
     sprite: _HL/Clothing/Back/ColNavInf/cnicorpsman.rsi
+
+- type: entity
+  id: ClothingBackpackCNICorpsmanFilled
+  parent: ClothingBackpackCNICorpsman
+  suffix: Filled
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: BackpackCNICorpsmanEntityTable
+
+- type: entityTable
+  id: BackpackCNICorpsmanEntityTable
+  table: !type:AllSelector
+    children:
+    - id: BoxNavalMRE
+    - id: DoubleEmergencyOxygenTankFilled
+    - id: DoubleEmergencyNitrogenTankFilled
+    - id: CrowbarRed
+    - id: WelderMini
+    - id: SpaceMedipen
+    - id: SpaceMedipen
+    - id: Tourniquet
+    - id: Tourniquet
+    - id: FirstAidMedipen
+    - id: FirstAidMedipen
+    - id: RadioHandheldNF
+    - id: ClothingMaskGasCNI
+    - id: Zipties
+    - id: Zipties
+    - id: FlashlightNfsdLite
 
 - type: entity
   parent: ClothingBackpackCNIRifleman

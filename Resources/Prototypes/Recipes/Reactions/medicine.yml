@@ -561,7 +561,7 @@
   id: Opporozidone
   minTemp: 400 #Maybe if a method of reducing reagent temp exists one day, this could be -50
   reactants:
-    Cognizine: 
+    Cognizine:
       amount: 1
     Plasma:
       amount: 2
@@ -662,3 +662,19 @@
       amount: 1
   products:
     Haloperidol: 5
+
+- type: reaction
+  id: Hemamaxizine
+  reactants:
+    Aluminium:
+      amount: 1
+    Arithrazine:
+      amount: 1
+    Radium:
+      amount: 1
+    PotassiumIodide:
+      amount: 1
+    Phalanximine:
+      amount: 1
+  products:
+    Hemamaxizine: 5

@@ -124,3 +124,11 @@
   frequency: 1995
   color: "#9900ff"
 
+- type: radioChannel
+  id: Naval
+  name: chat-radio-naval
+  keycode: 'd'
+  frequency: 1776
+  color: "#596986"
+  longRange: true
+
